@@ -33,7 +33,7 @@ li{margin:.15em 0}
 <p dir="ltr" lang="en"><strong>Last updated:</strong> 30 October 2026</p>
 </div>
 <section class="en" id="en" lang="en">
-<p>Al Mizan doesn't ask you to create an account. We don't collect your personal data on any server of our own. There are no ads in the app, and no analytics tools that track what you do.</p>
+<p>Al Mizan doesn't ask you to create an account. We don't collect your personal data on any server of our own. There are no ads in the app. The app uses Google's Firebase Analytics and In-App Messaging for basic usage statistics and occasional in-app messages; see <strong>Third-party services</strong> below.</p>
 <p>Many of the app's main features work offline. A few, such as looking up or searching for a place name, need an internet connection and outside services. Details are below.</p>
 <h2>What information the app uses</h2>
 <h3>Location (optional)</h3>
@@ -53,6 +53,7 @@ li{margin:.15em 0}
 <li><strong>Android's own Geocoder service:</strong> to find the name of a village, neighbourhood or district, the app asks your phone's built-in service. On some phones this service runs through Google, in which case the location coordinates may reach Google. That depends on your phone and your Google settings.</li>
 <li><strong>GitHub (Hilal date update):</strong> To update the date according to the moon sighting, the app downloads a public file (<code>hilal.json</code>) hosted on GitHub when the app opens and, in the background, at regular intervals (about every 20 minutes). This request doesn't send your location or any personal information; however, GitHub may receive your IP address and ordinary request details.</li>
 <li><strong>Firebase Cloud Messaging (Google):</strong> this is Google's standard service for delivering notifications to apps. The app uses it only to find out quickly when the Hilal date file has been updated, so the date can be refreshed. To make this work, the app gets a random installation ID, and Google's service sees that ID and your IP address, as any notification service does. It doesn't include your name, your location or anything you enter in the app, and it isn't used for ads or tracking. Google handles this data under its own policy.</li>
+<li><strong>Firebase Analytics and Firebase In-App Messaging (Google):</strong> the app uses these to understand basic usage (for example, which features are opened and what kind of device is used) and to show occasional messages inside the app. They use a random installation ID and may collect device and app-usage information and your IP address. They don't include your name or anything you enter in the app, and we don't use them for ads. Google handles this data under its own policy.</li>
 <li><strong>Your phone's network location:</strong> if GPS can't find you, your phone may try to work out your location from Wi-Fi or the mobile network. The phone's system does this, not the app, and on some phones it uses Google's location service. This also depends on your phone and your Google settings.</li>
 </ul>
 <p>We don't control these services. Please read their own policies for details.</p>
